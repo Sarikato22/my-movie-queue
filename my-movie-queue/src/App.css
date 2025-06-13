@@ -95,6 +95,7 @@ body{
   border: 0px solid;
   margin: 1rem 0;
   background-color: white;
+  color: black;
 }
 
 .rating-label {
@@ -106,6 +107,7 @@ body{
 
 .input-number {
   background-color: white;
+  color: black;
   margin-left: 0.5rem;
   width: 50px;
   padding: 0.3rem;
@@ -147,7 +149,7 @@ ul {
   border-radius: 20px;
   background-color: white;
   font-weight: 600;
-
+  color: var(--dark-blue);
 }
 
 p {
