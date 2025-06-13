@@ -99,9 +99,10 @@ function App() {
           Add Movie
         </button>
 
-        <button className="clear-button" onClick={()=>{
+        <button className="clear-button" onClick={() => {
           pq.clear();
           setMovies([]);
+          localStorage.removeItem('movieQueue');
         }}>
           Clear List
         </button>
@@ -121,6 +122,7 @@ function App() {
       <div className="suggestion-section">
       <button className="suggestion-button" onClick={()=>{
           const popped = pq.dequeue();
+          localStorage.removeItem('movieQueue');
           setMovies(pq.getAll());
           setLastPopped(popped);
         }}>
