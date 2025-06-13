@@ -129,7 +129,7 @@ function App() {
         </div>
         {lastPopped && (
         <div className="popped-movie">
-          <h3>Your top pick:</h3>
+          <h3 className="your-pick">Your top pick:</h3>
           <p>
             <strong>{lastPopped.title}</strong> — You: {lastPopped.yourRating}, Him: {lastPopped.hisRating} (Total: {lastPopped.priority})
           </p>
