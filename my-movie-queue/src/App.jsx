@@ -59,7 +59,7 @@ function App() {
           required
           className="input-text"
         />
-
+<div className= "rating-labels">
         <label className="rating-label">
           You:
           <input
@@ -93,7 +93,8 @@ function App() {
             className="input-number"
           />
         </label>
-
+</div>
+<div className="buttons">
         <button type="submit" className="btn-submit">
           Add Movie
         </button>
@@ -104,6 +105,7 @@ function App() {
         }}>
           Clear List
         </button>
+</div>
       </form>
       <p className="movie-list-text">Movie list:</p>
       <ul className="movie-list">
